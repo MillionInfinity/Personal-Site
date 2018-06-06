@@ -1,98 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Million</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-    <link rel="stylesheet" href="css/contact us.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Contact me</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+        <link rel="stylesheet" type="text/style" href="css/main.css">
 </head>
 
-<body>
+<body style="background-color:#404040">
+  <nav class="navbar navbar-expand-sm navbar-light mav" >
+      <a class="navbar-brand" href="index.html"><img src="images/logon1.png" alt="portofolio" width="50px" height="50px"></a>
+      <ul class="navbar-nav ml-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-right">
+                  <a class="navbar-right nav-link maini" href="index.html"><img src="images/logo.png" alt="portofolio" width="35px" height="35px"></a>
+                  <a class="nav-item nav-link active maini" href="portofolio.html"><img src="images/prh.png" alt="portofolio" width="35px" height="35px"><span class="sr-only">(current)</span></a>
+                  <a  class="navbar-right nav-link maini" href="blog.html"><img src="images/bloh.png" alt="blog" width="35px" height="35px"></a>
+                  <a class="navbar-right nav-link maini" href="contact us.html"><img src="images/co.png" alt="portofolio" width="40px" height="40px"></a>
 
-    <nav id="mnav" class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logon.png" alt="portofolio" width="75px" height="75px">
-        </a>
-        <!-- <ul class="navbar-nav ml-auto">
-                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                        </button>
-                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                              <div class="navbar-nav navbar-right">
-                                    <a class="nav-item nav-link active" href="#"><img src="images/logo.png" alt="portofolio" width="60px" height="60px"> <span class="sr-only">(current)</span></a>
-                                    <a class="navbar-right nav-link" href="portofolio.html"><img src="images/prh.png" alt="blog" width="50px" height="50px"></a>
-                                    <a class="navbar-right nav-link" href="contact us.html"><img src="images/contah.png" alt="portofolio" width="50px" height="50px"></a>
-                                     <a class="navbar-right nav-link" href="blog.html"><img src="images/bloh.png" alt="blog" width="50px" height="50px"></a>
-                               </div>
-                        </div>
-                  </ul> -->
-    </nav>
-    <!-- <nav class="navbar navbar-default nav2"></nav> -->
+              </div>
+          </div>
+      </ul>
+  </nav>
+  <div class="container-fluid_seperator_o" style="background-color:#404040"></div>
+  <div class="container-jumbotron" >
+    <!-- <img  class="responsive"src="images/milcon.png" alt=""> -->
+      <div class="container" style="background-color:#404040">
+    <h2 class="text-center">Drop me a line</h2>
+ <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+    <form>
+      <div class="form-row">
+     <div class="col">
+       <input type="text" class="form-control" placeholder="Your name">
+     </div>
 
-    <div class="container">
-        <h1 class="brand">
-            <span>Million </span> Web Designer / Developer</h1>
-        <div class="wrapper">
-            <div class="company-info">
-                <h3>Drop me a line. I Would love to hear from you.</h3>
-                <ul>
-                    <li>
-                        <i class="fa fa-road"></i> Nashville,TN</li>
-                    <li>
-                        <i class="fa fa-phone"></i> (615) 240-8403</li>
-                    <li>
-                        <i class="fa fa-user-md"></i> milly7989@gmail.com</li>
-                </ul>
-            </div>
-
-
-            <div class="contact">
-                <h3>Email Me</h3>
-                <div class="alert">Your message has been sent</div>
-                <form id="contactForm">
-                    <p>
-                        <label>Name</label>
-                        <input type="text" name="name" id="name" required>
-                    </p>
-                    <p>
-                        <label>Company</label>
-                        <input type="text" name="company" id="company">
-                    </p>
-                    <p>
-                        <label>Email Address</label>
-                        <input type="email" name="email" id="email" required>
-                    </p>
-                    <p>
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" id="phone">
-                    </p>
-                    <p class="full">
-                        <label>Message</label>
-                        <textarea name="message" rows="5" id="message"></textarea>
-                    </p>
-                    <p class="full">
-                        <button type="submit">Submit</button>
-                    </p>
-                </form>
-            </div>
-        </div>
+   </div>
+  <div class="form-row">
+    <div class="form-group col">
+      <label for="inputEmail4"></label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-default center-block">Send</button>
+    </div>
+  <!-- <button type="submit" class="btn btn-default center-block">Send</button> -->
+</form>
+</div>
+<div class="col-md-2"></div>
+</div>
+</div>
+</div>
+<!-- <div class="container-fluid_seperator_o" style="background-color:#404040"> -->
+
+  <!-- <div class=" container footer"> -->
+
+<ul class="text-center footer">
+    <li ><a href="https://www.linkedin.com/in/million-asseghegn-aa2788154/" target="_black"><img src="images/inb.png" alt="linkin" width="30px" height="30px"></a></li>
+    <li ><a href="https://github.com/MillionInfinity" target="_black"><img src="images/gitb.png" alt="github" width="30px" height="30px"></a></li>
+  </ul>
+      <!-- </div> -->
+          <!-- </div> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="js/main.js"></script>
+    <script src="dist/app.js"></script>
 </body>
 
 </html>
