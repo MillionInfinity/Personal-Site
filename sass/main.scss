@@ -61,15 +61,16 @@ z-index: 100;
 
 }
 
-h2.text-center_crimel,
+// h1.text-right_millJ{
+//   font-size:2px;
+// }
 h1.text-center_booka{
   position: relative;
   top: 110px;
  left:22%;
- font-size: 35px;
 }
 h2{
-  font-size: 28px;
+  font-size: 25px;
 }
 h2.text-right,
 h4.text-right{
@@ -89,9 +90,9 @@ h1.text-sm-center{
   margin-bottom:35px;
 }
 h1.text-right_millJ{
-font-size: 35px;
+font-size: 36px;
 position:absolute;
-left:30%;
+left:35%;
 top:310px;
   z-index: 150;
 }
@@ -115,6 +116,12 @@ p.footer,
 h2.text-center.Usability,
 h2.text-right.persona{
   color:#a3a0a0;
+}
+h2.text-center_crimel{
+  margin-top: 30%;
+  margin-left: 15%;
+  font-size: 32px;
+  margin-bottom: -30%;
 }
 h2.text-right.features{
   margin-top: 20%;
@@ -169,8 +176,19 @@ p.text-right_over{
   position: relative;
   top:80px;
 }
+p.text-justify_crime{
+  margin-top: 22px;
+}
+h4.float-right{
+  margin-top: 18px;
+}
 h3.float-right_crime{
   text-align: right;
+}
+h2.text-center_crime{
+  margin-top: -35px;
+  margin-left: 45%;
+  margin-bottom: 5px;
 }
 hr.book {
     position: relative;
@@ -183,6 +201,12 @@ hr.book {
     color:#a3a0a0;
     border: 0 none;
     margin-left: 12%;
+}
+.col-sm-5_boocalander{
+    margin-top:130px;
+}
+p.crimef{
+  padding-bottom: 35px;
 }
 .container-fluid_boocalander{
     margin-top:500px;
@@ -294,6 +318,9 @@ img.img-thumbnail.persona{
 .col-sm-2.jo:first-child{
   margin-left: 50px;
 }
+div.col-sm-8.col-md-8.crime{
+  margin-top:20px;
+}
 #scroll {
     position:fixed;
     right:10px;
@@ -347,7 +374,99 @@ img.img-thumbnail.persona{
 
 //end of delete//
 
+// modal for images
 
+/* Style the Image Used to Trigger the Modal */
+   .modalImg {
+       border-radius: 5px;
+       cursor: pointer;
+       transition: 0.3s;
+   }
+
+   .modalImg:hover {opacity: 0.7;}
+
+   /* The Modal (background) */
+   .modal {
+       display: none; /* Hidden by default */
+       position: fixed; /* Stay in place */
+       z-index: 1; /* Sit on top */
+       padding-top: 100px; /* Location of the box */
+       left: 0;
+       top: 0;
+       width: 100%; /* Full width */
+       height: 100%; /* Full height */
+       overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+       background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+   }
+
+   /* Modal Content (Image) */
+   .modal-content {
+       margin: auto;
+       display: block;
+       width: 80%;
+       max-width: 700px;
+   }
+
+   /* Caption of Modal Image (Image Text) - Same Width as the Image */
+   #caption {
+       margin: auto;
+       display: block;
+       width: 80%;
+       max-width: 700px;
+       text-align: center;
+       color: #ccc;
+       padding: 10px 0;
+       height: 150px;
+   }
+
+   /* Add Animation - Zoom in the Modal */
+   .modal-content, #caption {
+       -webkit-animation-name: zoom;
+       -webkit-animation-duration: 0.6s;
+       animation-name: zoom;
+       animation-duration: 0.6s;
+   }
+
+   @-webkit-keyframes zoom {
+       from {-webkit-transform:scale(0)}
+       to {-webkit-transform:scale(1)}
+   }
+
+   @keyframes zoom {
+       from {transform:scale(0)}
+       to {transform:scale(1)}
+   }
+
+   /* The Close Button */
+   .close {
+       position: absolute;
+       top: 50px;
+       right: 35px;
+       color: #f1f1f1;
+       font-size: 40px;
+       font-weight: bold;
+       transition: 0.3s;
+   }
+
+   .close:hover,
+   .close:focus {
+       color: #bbb;
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   /* 100% Image Width on Smaller Screens */
+   @media only screen and (max-width: 700px){
+       .modal-content {
+           width: 100%;
+       }
+   }
+
+
+
+
+// modal ends
 
 
 
