@@ -90,7 +90,7 @@ h1.text-sm-center{
   margin-bottom:35px;
 }
 h1.text-right_millJ{
-font-size: 36px;
+font-size: 24px;
 position:absolute;
 left:35%;
 top:310px;
@@ -272,6 +272,11 @@ hr{
   margin-right: 20px;
   top: 55px;
 }
+.crime-book,
+.book-btn{
+  position: relative;
+   top:-5px;
+}
 .vlc.Required{
   border-left: 4px solid #a3a0a0;
   height: 220px;
@@ -283,7 +288,7 @@ hr{
 .img-fluid_books{
     border-radius: 5px;
 }
-.col-sm-4_boocalander{
+div.col-sm-4.boocalander{
     margin-top: 200px;
 }
 .col-md-5_overview{
