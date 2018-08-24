@@ -50,7 +50,8 @@ h3 {
         font-style: italic;
         padding: 0.2rem 1rem;
         color: $preprimary;
-        line-height: 2.5;
+        line-height: 1.5;
+        font-size:1.5em;
     }
 }
 
@@ -651,18 +652,20 @@ h1.abt {
     z-index: 3;
     right: 25px;
     top: 30px;
+    // width:1rem;
+    zoom:300%;
     cursor: pointer;
     @include easeOut;
     &.close {
         // zoom: 455%;
         transform: rotate(360deg);
-        -webkit-transform: rotate( 360deg);
-        -moz-transform: rotate( 360deg);
-        -ms-transform: rotate( 360deg);
-        -o-transform: rotate( 360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
         right: 9.5vw;
         top: 1vh;
-          }
+}
   }
   .boxes {
     position: absolute;
