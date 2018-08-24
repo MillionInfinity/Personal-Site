@@ -3,6 +3,7 @@
   z-index: 3;
   right: 25px;
   top: 25px;
+  zoom: 150%;
   cursor: pointer;
   transition: all 1.5s ease-out;
   -webkit-transition: all 1.5s ease-out;
@@ -229,7 +230,8 @@ header {
       font-style: italic;
       padding: 0.2rem 1rem;
       color: #a3a0a0;
-      line-height: 2.5; }
+      line-height: 1.5;
+      font-size: 1.5em; }
 
   a {
     color: #404040;
@@ -735,6 +737,7 @@ header {
     z-index: 3;
     right: 25px;
     top: 30px;
+    zoom: 300%;
     cursor: pointer;
     transition: all 1.5s ease-out;
     -webkit-transition: all 1.5s ease-out;
