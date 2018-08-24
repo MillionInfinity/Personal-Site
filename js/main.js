@@ -33,3 +33,15 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+var prt=document.getElementsByClassName('prt'),
+
+    modal=document.getElementById('myModal'),
+    modalImg=document.getElementById("img01");
+//  console.log(prt);
+
+$(".prt").click(function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+});
