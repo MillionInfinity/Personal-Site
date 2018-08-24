@@ -1,0 +1,178 @@
+@import "variable.scss";
+
+@mixin easeOut {
+    transition: all 1.5s ease-out;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -ms-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+}
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #404040;
+    }
+    @else {
+        @return #a3a0a0;
+    }
+}
+
+// // Media Query Mixins
+@mixin mediaXsm {
+     @media screen and (max-width: 500px){
+         @content;
+     }
+}
+@mixin mediaSm {
+    @media screen and (min-width: 500px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
+
+
+//no need//
+
+
+
+
+
+
+
+// // // Widescreens
+// @include mediaXl {
+//     .projects {
+//         grid-template-columns: repeat(4, 1fr);
+//     }
+// }
+
+// // // Desktops & Laptops
+// @include mediaLg {
+//     .projects {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+// }
+
+// // // Tablets & Small Laptops
+// @include mediaMd {
+//     main {
+//         align-items: center;
+//         text-align: center;
+//        .lg-heading {
+//            background:$preprimary;
+//            border:solid 5px $secondary;
+//            width:350px;
+//            height: 350px;
+//            border-radius:50%;
+//            position: relative;
+//            left:-300px;
+//            -webkit-border-radius:50%;
+//            -moz-border-radius:50%;
+//            -ms-border-radius:50%;
+//            -o-border-radius:50%;
+// }
+//         .text-secondary{
+//             margin-left: -15px;
+//             // background: $prmary;
+//         }
+//     }
+ 
+//      img.logo {
+//          float: center;
+//          background: $secondary;
+//         //  width:13rem;
+
+//          position: relative; //  float: none;
+//         //  left: -40px;
+//         //  top: -1rem;
+//          &.close {
+//              zoom: 855%;
+//              transform: rotate(180deg);
+//              -webkit-transform: rotate(180deg);
+//              -moz-transform: rotate(180deg);
+//              -ms-transform: rotate(180deg);
+//              -o-transform: rotate(180deg);
+//              right: 50.5vw;
+//              top: 10.5vh;
+// }
+//      }
+// // }
+
+  
+//     ul.menu-nav,
+//     div.menu-branding {
+//         float: none;
+//         width: 100%;
+//         min-height: 0;
+//         &.show {
+//             transform: translate3d(0, 0, 0);
+//         }
+//     }
+//     .menu-nav {
+//         height: 75vh;
+//         transform: translate3d(-100%, 0, 0);
+//         font-size: 24px;
+//     }
+ 
+//     .menu-branding {
+//         height: 25vh;
+//         transform: translate3d(100%, 0, 0);
+     
+//           }
+//     .about-info {
+//         grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+//         grid-template-columns: 1fr;
+//     }
+//     .projects {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
+
+// // Smartphones
+// @include mediaSm {
+//     // main#home h1 {
+//     //     margin-top: -25vh;
+//     // }
+//     #home{
+//         top: -250px;
+//     }
+
+//     .projects {
+//         grid-template-columns: 1fr;
+//     }
+//     .logo {
+//         height: 100%;
+//         // top: -110px;
+//         right:50px;
+//         transform: translate3d(100%, 0, 0);
+//     }
+    
+// }

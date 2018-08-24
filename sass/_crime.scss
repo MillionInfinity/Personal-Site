@@ -1,0 +1,74 @@
+@import "mixin.scss";
+@include mediaXl {
+    body#bookbody {
+          .cricover {
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            'k l'
+             'm n' 
+             'o p'
+              'r r'
+              's s';
+            .over {
+                grid-area: k;
+                margin-left: 10rem;
+            }
+            .bcgd{
+             margin-right: 10rem;
+             grid-area: l;
+            }
+            .concept {
+                margin-right: 10rem;
+                grid-area: l;
+            }
+            .over-1 {
+                grid-area: m;
+                margin-left: 10rem;
+            }
+            .concept-1 {
+                margin-right: 10rem;
+                grid-area: n;
+            }
+            .over-2 {
+                grid-area: o;
+                margin-left: 10rem;
+            }
+            .concept-2 {
+                margin-right: 10rem;
+                grid-area: p;
+            }
+            .over-3 {
+                grid-area: r;
+                margin-left: 13rem;
+            }
+            .concept-3 {
+                margin-left: 13rem;
+                grid-area: s;
+                margin-bottom: 10rem;
+            }
+            .overview {
+                border-radius: 5px; // background: $preprimary;
+                padding: 1.5rem 2.5rem;
+                border: $secondary 1px solid; // border-bottom: $primary 5px solid;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 1rem; //    @include easeOut;
+                &:hover {
+                    padding: 0.5rem 1.5rem; // background: $secondary;
+                    color: white; // color: set-text-color($secondary);
+                    // span {
+                    //     color: set-text-color($secondary);
+                    // }
+                }
+            }
+            .feature {
+                display: absolute;
+                right: -5px;
+            }
+        }
+    }
+}
