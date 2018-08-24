@@ -1,0 +1,413 @@
+@import "mixin.scss";
+@include mediaXl {
+ body#bookbody {
+     .sk {
+         margin-left: 17%;
+     }
+     .procrime {
+          margin-left: -15%;
+          margin-top: 60px;
+          width: 800px;
+         border-radius: 5px;
+     }
+          background: rgba(lighten($primary, 2), 0.2);
+      
+    // background:url('../img/2019.png');
+    margin:0;
+    background-repeat: no-repeat;
+    // height:100%;
+    section#book{
+     display:grid;
+     grid-gap: 15%;
+     grid-template-columns:600px 1fr;
+        .bookimg img{
+         width:550px;
+         margin-top:15vh;
+         margin-left:5vw;
+        }
+        .lg-bookh1{
+             margin-top:45vh;
+            color: $primary;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .sm-bookh6{
+              margin-bottom: 1.5rem;
+              font-style: italic;
+              padding: 0.2rem 0rem;
+              color: $preprimary;
+              line-height: 2.5;
+        }
+    }
+    .secover{
+        display:grid;
+        grid-gap: 10px;
+        grid-auto-columns: repeat(2,1fr);
+        grid-template-areas: 
+         'k l'
+         'm n'
+         'o p'
+         'r r'
+         's s';
+        .over{
+            grid-area: k;
+            margin-left:10rem;
+        }
+        .concept{
+             margin-right:10rem;
+            grid-area: l;
+        }
+         .over-1 {
+             grid-area: m;
+             margin-left: 10rem;
+         }
+
+         .concept-1 {
+             margin-right: 10rem;
+             grid-area: n;
+         }
+           .over-2 {
+               grid-area: o;
+               margin-left: 10rem;
+           }
+
+           .concept-2 {
+               margin-right: 10rem;
+               grid-area: p;
+           }
+             .over-3 {
+                 grid-area: r;
+                 margin-left: 13rem;
+             }
+
+             .concept-3 {
+                 margin-left: 13rem;
+                 grid-area: s;
+                 margin-bottom: 10rem;
+             }
+     .overview {
+        border-radius:5px;
+        // background: $preprimary;
+        padding: 1.5rem 2.5rem;
+        border:$secondary 1px solid;
+        // border-bottom: $primary 5px solid;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-top: 1rem;
+        //    @include easeOut;
+            &:hover {
+                padding: 0.5rem 1.5rem;
+                // background: $secondary;
+                color: white;
+                // color: set-text-color($secondary);
+                 // span {
+                //     color: set-text-color($secondary);
+                // }
+            }
+         }
+         .feature {
+             display: absolute;
+             right: -5px;
+         }
+    }
+    
+ }
+}
+@include mediaLg {
+     body#bookbody {
+         background:rgba(lighten($primary, 2), 0.1);
+       
+     }
+      
+     .sketches {
+         display: grid;
+         grid-gap: 10px;
+         grid-template-areas: 
+         'lg'
+          'sm' 
+          'sk '
+          'sl';
+         .lg-sk {
+             grid-area: lg;
+         }
+         .sm-sk {
+             grid-area: sm;
+         }
+         .procrime {
+            //  margin-left: -15%;
+               border-radius: 5px;
+         }
+          .procrime {
+             
+              margin-left: -15%;
+              margin-top: 60px;
+              width: 400px;
+              border-radius: 5px;
+          }
+         .sk4 {
+            
+             border-radius: 5px;
+             ;
+         }
+         .sk5 {
+             border-radius: 5px;
+         }
+     }
+
+    section#book {
+        
+        display: grid;
+        grid-gap: 15%;
+        .bookimg img {
+            width: 75%;
+            margin-top: 10vh;
+            margin-left:13%;
+        }
+        .booktext{
+             margin-left:25%;
+        .lg-bookh1 {
+            // margin-top: 45vh;
+            
+            color: $preprimary;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .sm-crime6{
+           color: $secondary;
+           margin-left:-3%;
+        }
+        .sm-bookh6 {
+             margin-left:-10%;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            padding: 0.2rem 0rem;
+            color: $secondary;
+            line-height: 2.5;
+        }
+
+    }
+   .secover {
+       
+       display: grid;
+       grid-gap: 10px;
+       grid-auto-columns: repeat(2, 1fr);
+       grid-template-areas: 
+       'k l'
+       'k l';
+       .over {
+           grid-area: k;
+           margin-left: 10rem;
+       }
+       .concept {
+           margin-right: 10rem;
+           grid-area: l;
+       }
+       
+   }
+    }
+     
+    .overview {
+        width:80%;
+       
+        border-radius: 5px; // background: $preprimary;
+        padding: 1.5rem 2.5rem;
+        border: $secondary 1.5px solid; // border-bottom: $primary 5px solid;
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        // @include easeOut;
+        // &:hover {
+        //     padding: 0.5rem 1.5rem;
+        //     background: $preprimary;
+        //     color: set-text-color($secondary); // span {
+        //     //     color: set-text-color($secondary);
+        //     // }
+        // }
+    }
+}
+@include mediaMd {
+section#book {
+      background:$preprimary;
+    display: grid;
+    grid-gap: 15%; // grid-template-columns: 600px 1fr;
+    .bookimg img {
+        width: 450px;
+        margin-top: 15vh;
+        margin-left: 25%;
+    }
+    .booktext {
+        margin-left: 25%;
+        .lg-bookh1 {
+            // margin-top: 45vh;
+            color:$primary;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .sm-crime6 {
+            color: $secondary;
+            margin-left: -15%;
+            text-justify: auto;
+        }
+        .sm-bookh6 {
+            margin-right: 5px;
+            margin-left: -10%;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            padding: 0.2rem 0rem;
+            color: $primary;
+            line-height: 2.5;
+        }
+    }
+ 
+}
+ .sketches {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-areas: 'lg' 'sm' 'sk ' 'sl';
+     .lg-sk {
+         grid-area: lg;
+     }
+     .sm-sk {
+         grid-area: sm;
+     }
+     .sk4 {
+        //  margin-left: 15%;
+         border-radius: 5px;
+         
+     }
+     .procrime {
+         
+         margin-left: -15%;
+         margin-top: 100px;
+         width: 400px;
+         border-radius: 5px;
+     }
+     .sk5 {
+         border-radius: 5px;
+     }
+ }
+}
+
+@include mediaXsm {
+body#bookbody {
+    background:$primary;
+    margin: 0;
+    background-repeat: no-repeat; // height:100%;
+
+
+section#book {
+        display: grid;
+        grid-gap: 15%; // grid-template-columns: 600px 1fr;
+        .bookimg img {
+            width: 240px;
+            margin-top: 15vh;
+            margin-left: 25%;
+        }
+        .booktext {
+            margin-left: 20%;
+            .lg-bookh1 {
+                // margin-top: 45vh;
+                color: $primary;
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .sm-crime6 {
+                color: $secondary;
+                margin-left: -3%;
+            }
+            .sm-bookh6 {
+                margin-left: -10%;
+                margin-right:5px;
+                margin-bottom: 1.5rem;
+                font-style: italic;
+                padding: 0.2rem 0rem;
+                color: $preprimary;
+                line-height: 2.5;
+            }
+        }
+     
+    }
+       .overview {
+         margin-left: 10%;
+       }
+}
+}
+  
+
+  .overviews {
+      width: 80%;
+      background:white;
+      border-radius: 5px; 
+      padding: 1.5rem 2.5rem;
+      color:$preprimary;
+    //   border: $secondary 1.5px solid; 
+      margin-top: 1rem;
+      margin-left: 5rem;
+      @include easeOut;
+     &:hover {
+        color:white;
+          background: $preprimary;
+        //   color: set-text-color(white);
+        }
+        h3,
+        h4,
+        h5,
+        h6{
+        // color:$preprimary;
+        line-height: 1.5;
+        }
+        
+  }
+ .sketches {
+     display:grid;
+     grid-gap: 10px;
+     grid-template-areas:
+     'lg lg'
+     'sm sm' 
+     'sk sl';
+     .lg-sk{
+         grid-area: lg;
+     }
+     .sm-sk{
+         grid-area: sm;
+
+     }
+     .sk4{
+         margin-left:15%;
+         border-radius: 5px;     ;
+        }
+    .sk5{
+        border-radius: 5px;
+    } 
+
+}
+ .modal-content {
+     position: absolute;
+     top: 15%;
+     left: 15%;
+     width: 60%;
+     border:solid 2px $secondary;
+   
+ }
+
+   span.close {
+       position: absolute;
+       top: 15%;
+       left: 72%;
+       z-index: 150;
+       zoom: 1.5;
+   }
+
+   .sk {
+            margin-left:30%;
+            border-radius: 5px;
+        }
