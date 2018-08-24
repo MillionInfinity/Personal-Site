@@ -1,137 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
-        <link rel="stylesheet" type="text/style" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/logon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>About Me</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-sm navbar-light mav" style="background-color:#a3a0a0">
-      <a class="navbar-brand" href="index.html"><img src="images/logon.png" alt="portofolio" width="50px" height="50px"></a>
-      <ul class="navbar-nav ml-auto">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav navbar-right">
-                  <a class="navbar-right nav-link maini" href="index.html"><img src="images/logo.png" alt="portofolio" width="35px" height="35px"></a>
-                  <a class="nav-item nav-link active maini" href="portofolio.html"><img src="images/php.png" alt="portofolio" width="40px" height="40px"><span class="sr-only">(current)</span></a>
-                  <a  class="navbar-right nav-link maini" href="blog.html"><img src="images/bloh.png" alt="blog" width="35px" height="35px"></a>
-                  <a class="navbar-right nav-link maini" href="contact us.html"><img src="images/contah.png" alt="portofolio" width="35px" height="35px"></a>
+<body class="prf">
+    <div class="overlay"></div>
+    <header>
+        <div class="menu-btn">
+            <img class="logo" src="img/logon.png" width="50px" height="50px">
+        </div>
 
-              </div>
-          </div>
-      </ul>
-  </nav>
 
-    <!-- <nav class="navbar navbar-default nav2 snav"></nav> -->
-    <!-- <div class="container-fluid_seperator_o" style="background-color:white"></div> -->
-    <div class="container-fluid_seperator_m"style="background-color:#a3a0a0"></div>
-    <div class="container-fluid"style="background-color:#a3a0a0" >
-     <div class="container"style="background-color:white">
-     <div class="row">
-         <div class="col-sm-3 text-center" style="background-color:#404040">
-           <p class="text-center">
-             <img class="img-fluid_million" src="images/fab.png" alt="persona"  width="120px"/>
-             <!-- <img class="img-fluid_mili" src="images/fab.png" alt="persona"  width="200px"/> -->
-           </p>
-           <h1 class="text-center profile" style="margin-left:15px">Million Asseghegn</h1>
-       <!-- <div class="vlc"></div> -->
-         </div>
-         <div class="col-sm-8">
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                    <!-- <img src="img/fab.png" width="180px" height="180px"> -->
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item ">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="portofolio.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">My Projects</a>
+                </li>
 
-            <!-- <h1 class="text-left profile" style="margin-left:15px">Million Asseghegn</h1> -->
-            <!-- <h1 class="text-left profile">Front-End Web Developer and UX/Ui Designer</h1> -->
-         </div>
-         </div>
-       <div class="row">
-         <div class="col-sm-3" style="background-color:#404040">
-           <h2 class="text-right profile">Bio</h2>
-           <!-- <div class="vlc"></div> -->
-         </div>
-         <div class="col-sm-8">
-           <!-- <h2 class="text-left persona">FRONT-END WEB DEVELOPER AND UI/UX DESIGNER</h2> -->
-             <p class="persona" style="margin-left:30px">  A self-motivated and detail oriented web designer. Passionate in inventing new ways to achieve my goals.  Experienced professional pyrography artist and entrepreneur.
-            </p>
-         </div>
-         </div>
-         <div class="row">
-           <div class="col-sm-3" style="background-color:#404040">
-             <h2 class="text-right profile" style="margin-left:15px">Work Experience</h2>
-             <!-- <div class="vlc"></div> -->
-           </div>
-           <div class="col-sm-8">
-             <h2 class="text-left profile" style="margin-left:15px">FRONT-END WEB DEVELOPER AND UI/UX DESIGNER</h2>
-               <h3 class="text-left profile" style="margin-left:15px">Nashville Software School, <em>Jan 02, 2018 - Present</em></h3>
-               <p class="persona" style="margin-left:30px">- NSS is Intensive full-time software development boot camp focusing on full stack
-                   development fundamentals and problem solving with the final half of the program
-                   being executed in a simulated company environment with Scrum methodology.<br/>
-                - Built single-page applications in the React framework leveraging HTML, CSS, and   JavaScript
-                Task Automation with Grunt: Lining with JSHint, module bundling with
-                   Browserify, SASS compilation.<br/>- Create user stories based on assessment of user experience and workflow
-                     Produce visual & interactive design with strategic
-                   use of typography, layout, color,     motion, and behavior.
-              </p>
-               <h2 class="text-left profile" style="margin-left:15px">FOUNDER AND PRINCIPAL</h2>
-                    <h3 class="text-left profile" style="margin-left:15px">Hilina Kid’s Village, <em>June 2006 - Sep 2016 </em></h3>
-               <p classs="persona" style="margin-left:30px">
-                - Provide leadership and direction for educational goals and curriculum. <br />
-                 - Maintain appropriate financial, administrative, and performance records.
-               </p>
-               <h2 class="text-left profile" style="margin-left:15px">PROFESSIONAL PYROGRAPH ARTIST</h2>
-                    <h3 class="text-left profile" style="margin-left:15px">Eritrea + US, <em>2004 - Present </em></h3>
-               <p classs="persona" style="margin-left:30px">
-                - Sold over 300 original and commissioned pieces using pointillism techniques. <br />
-                -  Curate exhibits. <br />
-                - Collaborate with clients for custom pieces; design planning, pricing, deadline estimation.
-               </p>
-           </div>
-           </div>
-           <div class="row">
-             <div class="col-sm-3" style="background-color:#404040">
-               <h2 class="text-right profile">Project</h2>
-               <!-- <div class="vlc"></div> -->
-             </div>
-             <div class="col-sm-8">
-               <h2 class="text-left profile" style="margin-left:15px">BOOCALANDER</h2>
-                    <h3 class="text-left profile" style="margin-left:15px"><a href="https://millioninfinity.github.io/Booklander/"><em>https://millioninfinity.github.io/Booklander/</em></a></h3>
-               <p classs="persona" style="margin-left:30px">
-                Responsive CRUD  application allowing users  to schedule time to read and
-                track  when  to return library and other types of books. Built in JavaScript/JQuery with
-                flat data-structure in Firebase, a user is created and http requests posts and
-                query collection for real-time updates on adding, editing and deleting books.
-               </p>
-             </div>
-             </div>
-         </div>
-   </div>
-   <div class="container-fluid_seperator_o" style="background-color:#a3a0a0"></div>
-   <div class="container-fluid_seperator_o" style="background-color:#a3a0a0">
-     <div class=" container text-center">
-    <p class="text-center persona" style="color:white">
-      "Look forward to hearing from you soon."
-    </p>
+                <li class="nav-item">
+                    <a href="contact_me.html" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-         </div>
-             </div>
-             <div class="container-fluid_seperator_o" style="background-color:#a3a0a0">
-               <div class=" container">
 
-             <ul class="text-center footer">
-                 <li ><a href="https://www.linkedin.com/in/million-asseghegn-aa2788154/" target="_black"><img src="images/inb.png" alt="linkin" width="30px" height="30px"></a></li>
-                 <li ><a href="https://github.com/MillionInfinity" target="_black"><img src="images/gitb.png" alt="github" width="30px" height="30px"></a></li>
-               </ul>
-                   </div>
-                       </div>
+    <main id="about">
+        <h1 class="lg-heading abt">
+            About
+            <span class="text-secondary me">Me</span>
+        </h1>
+        <h2 class="sm-heading letme">
+            Hi,Nice to Meet you...
+        </h2>
+        <div class="about-info">
+            <div class="bio-image">
+                <img src="img/fab1.png" alt="John Doe" width="200px">
+            </div>
+            <div class="bio">
+                <h3 class="text-secondary">BIO</h3>
+                <p class="bio-text">A self-motivated and detail oriented web designer. Passionate in inventing new ways to achieve my goals.
+                    Experienced professional pyrography artist and entrepreneur.</p>
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <!-- <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script> -->
-    <script src="dist/app.js"></script>
+            <div class="job job-1">
+                <h4>FRONT-END DEVELOPER AND UI/UX DESIGNER</h4>
+                <h5>Nashville Software School,
+                    <span>Jan 02, 2018 - Present</span>
+                </h5>
+                <p>- NSS is Intensive full-time software development boot camp focusing on full stack development fundamentals
+                    and problem solving with the final half of the program being executed in a simulated company environment
+                    with Scrum methodology.
+                    <br/>- Built single-page applications in the React framework leveraging HTML, CSS, and JavaScript Task Automation
+                    with Grunt: Lining with JSHint, module bundling with Browserify, SASS compilation.
+                    <br/> - Create user stories based on assessment of user experience and workflow Produce visual & interactive
+                    design with strategic use of typography, layout, color, motion, and behavior.</p>
+            </div>
+
+            <div class="job job-2">
+                <h4>FOUNDER AND PRINCIPAL</h4>
+                <h5>Hilina Kids's Village,
+                    <span>June 2006- Sep 2016</span>
+                </h5>
+                <p>- Provide leadership and direction for educational goals and curriculum.
+                    <br/> - Maintain appropriate financial, administrative, and performance records.</p>
+            </div>
+
+            <div class="job job-3">
+                <h4>PROFESSIONAL PYROGRAPHER</h4>
+                <h5>Eritrea + US,
+                    <span>2004 - Present</span>
+                </h5>
+                <p>- Sold over 300 original and commissioned pieces using pointillism techniques.
+                    <br/> - Curate exhibits.
+                    <br/> - Collaborate with clients for custom pieces; design planning, pricing, deadline estimation.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2018
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
