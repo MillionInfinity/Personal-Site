@@ -653,7 +653,7 @@ h1.abt {
     right: 25px;
     top: 30px;
     // width:1rem;
-    zoom:300%;
+    // zoom:300%;
     cursor: pointer;
     @include easeOut;
     &.close {
@@ -917,9 +917,7 @@ h2.h2-cont {
         // width:5rem;
         top: 0vh;
     }
-    &.logo {
-        // width: -px !important;
-    }
+  
 }
 
 #contact{
