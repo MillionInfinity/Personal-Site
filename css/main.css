@@ -3,7 +3,6 @@
   z-index: 3;
   right: 25px;
   top: 25px;
-  zoom: 150%;
   cursor: pointer;
   transition: all 1.5s ease-out;
   -webkit-transition: all 1.5s ease-out;
@@ -737,7 +736,6 @@ header {
     z-index: 3;
     right: 25px;
     top: 30px;
-    zoom: 300%;
     cursor: pointer;
     transition: all 1.5s ease-out;
     -webkit-transition: all 1.5s ease-out;
